@@ -32,5 +32,8 @@ const getAllShipments = asyncHandler(async (req, res) => {
 
 router.post('/', uploadShipment);
 router.get('/getShipments', getAllShipments);
+router.get('/get', (req,res)=>{
+    res.send('this is debug')
+});
 
 module.exports = router;
