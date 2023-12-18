@@ -27,8 +27,8 @@ const uploadShipment = asyncHandler(async (req, res) => {
 const getAllShipments = asyncHandler(async (req, res) => {
     const shipmentsData = await Shipment.find();
     // console.log(shipments.body);
-    shipments = {shipments:shipmentsData}
-    res.json(shipments);
+    const shipments = {shipments:shipmentsData}
+    res.send(shipments);
   });
 
 router.post('/', uploadShipment);
