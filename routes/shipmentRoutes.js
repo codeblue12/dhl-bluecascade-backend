@@ -26,8 +26,7 @@ const uploadShipment = asyncHandler(async (req, res) => {
 
 const getAllShipments = asyncHandler(async (req, res) => {
     const shipmentsData = await Shipment.find();
-    // console.log(shipments.body);
-    const shipments = {shipments:shipmentsData}
+    const shipments = {shipmentsData}
     res.send(shipments);
   });
 
