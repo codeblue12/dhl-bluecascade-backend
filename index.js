@@ -12,7 +12,7 @@ const corsOptions = {
 
 
 
-app.use(cors(corsOptions));
+app.use(cors());
 const connectDB = require('./config/db.js');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
