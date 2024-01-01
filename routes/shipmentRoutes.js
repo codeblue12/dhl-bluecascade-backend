@@ -44,12 +44,9 @@ const getShipmentDocs = asyncHandler(async (req, res) => {
         if (error.response) {
             console.error('Response Status:', error.response.status);
             console.error('Response Data:', error.response.data.details);
-            res.status(error.response.status).send({ error: error.response.data.details });
-        } else {
-            res.status(500).send('Internal Server Error');
         }
+        res.status(500).send('Internal Server Error');
     }
-    
 });
 
 
