@@ -32,7 +32,7 @@ const getShipmentDocs = asyncHandler(async (req, res) => {
     };
 
     const endpoint = 'https://express.api.dhl.com/mydhlapi/shipments';
-    // console.log('_________________endpoint______________', endpoint);
+    console.log('_________________endpoint______________', endpoint);
 
     try {
         const response = await axios.post(endpoint, requestBody, config);
