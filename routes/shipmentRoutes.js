@@ -31,7 +31,7 @@ const getShipmentDocs = asyncHandler(async (req, res) => {
         headers: headers,
     };
 
-    const endpoint = 'https://express.api.dhl.com/mydhlapi/test/shipments';
+    const endpoint = 'https://express.api.dhl.com/mydhlapi/shipments';
     // console.log('_________________endpoint______________', endpoint);
 
     try {
